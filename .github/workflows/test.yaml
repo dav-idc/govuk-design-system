@@ -20,7 +20,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         include:
           - os: ubuntu-latest
-            upload-artifact: ${{ inputs.upload-artifact }}
+            upload-artifact: true
     runs-on: ${{ matrix.os }}
     env:
       ENVIRONMENT: production
